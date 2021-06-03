@@ -131,9 +131,7 @@ elif dia == 'AdaBosst':
 else:
 	st.text('error')			
 	
-			st.write('''
-			## Results 🔍 
-			''')
+			st.write('Results 🔍')
 		
 			st.text(nStress)
 			if nStress < 3:
