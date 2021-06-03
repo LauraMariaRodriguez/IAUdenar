@@ -5,6 +5,7 @@ import pandas as pd
 dt = joblib.load("dt.pkl")  #Cargamos el arbol de decision
 rf = joblib.load("rf.pkl")  #Cargamos el random forest
 lr  = joblib.load("lr.pkl")  #Cargamos la linear regresion
+ab = joblib.load("ab.pkl")  #Cargamos Adaboost 
 meanVal = joblib.load("meanVal.pkl")  #Cargamos los valores medios
 meanVal = pd.DataFrame(meanVal)
 maxVal = joblib.load("maxVal.pkl")  #Cargamos los valores medios
@@ -25,8 +26,10 @@ def rr_to_hb(rr):
 	rr = rr*1000*60
 	return rr
 
-
 st.set_page_config(layout="wide")
+st.title('IA Udenar')
+st.header("Ejercicio IA Udenar Oscar Andrés Rosero Calderón")
+
 st.write("Stress Wearables")
 
 left, right = st.beta_columns(2)
