@@ -110,11 +110,6 @@ def update():
 	val.meditation = 1 if state == "Meditando" else 0
 
 modelo = left.selectbox("Modelo de predicción",("Árbol de Decisión","Random Forest", "Linear Regression", "AdaBosst"))
-	
-if st.button('Predict'):
-			update()
-			
-			prediction = dt.predict(val)
 
 if modelo == 'Árbol de Decisión':
 	st.text('Árbol de Decisión')
@@ -129,7 +124,13 @@ elif dia == 'AdaBosst':
 	st.text('AdaBosst')
 	nStress = int(ab.predict(val))
 else:
-	st.text('error')			
+	st.text('error')	
+
+if st.button('Predict'):
+			update()
+			
+			prediction = dt.predict(val)
+		
 	
 			st.write('Results 🔍')
 		
