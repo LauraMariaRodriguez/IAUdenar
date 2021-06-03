@@ -115,12 +115,26 @@ if st.button('Predict'):
 			update()
 			
 			prediction = dt.predict(val)
+
+if modelo == 'Árbol de Decisión':
+	print('Árbol de Decisión')
+	nStress = int(dt.predict(val))
+elif dia == 'Random Forest':
+	print('Random Forest')
+	nStress = int(rf.predict(val))
+elif dia == 'Linear Regression':
+	print('Linear Regression')
+	nStress = int(lr.predict(val))
+elif dia == 'AdaBosst':
+	print('AdaBosst')
+	nStress = int(ab.predict(val))
+else:
+	print('error')			
 	
 			st.write('''
 			## Results 🔍 
 			''')
 		
-			nStress = int(ab.predict(val))
 			st.text(nStress)
 			if nStress < 3:
 				st.text("Que estres ni estres, si te relajas más te quedas dormido")
