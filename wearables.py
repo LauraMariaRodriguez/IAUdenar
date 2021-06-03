@@ -120,7 +120,7 @@ if st.button('Predict'):
 			## Results 🔍 
 			''')
 		
-			nStress = int(rf.predict(val))
+			nStress = int(dt.predict(val))
 			st.text(nStress)
 			if nStress < 3:
 				st.text("Que estres ni estres, si te relajas más te quedas dormido")
