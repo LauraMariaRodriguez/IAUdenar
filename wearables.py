@@ -115,7 +115,7 @@ if st.button('Predict'):
 			update()
 			
 			prediction = dt.predict(val)
-	st.text(int(prediction))
+	st.text(int(rf.predict(val)))
 			st.write('''
 			## Results 🔍 
 			''')
