@@ -39,7 +39,7 @@ hrv_MEAN_RR = right.slider("Latidos por minuto", math.floor(rr_to_hb(minVal.hrv_
 hrv_MEAN_RR = 1/(hrv_MEAN_RR/1000/60)
 
 right.markdown(
-	"<center><img src ='https://ae01.alicdn.com/kf/HTB1FAZjGHSYBuNjSspfq6AZCpXaJ/Sensor-de-corriente-de-piel-Grove-GSR-Medici-n-de-Resistencia-de-la-piel-conductividad-el.jpg_q50.jpg' style = 'width : 25%;'><br> Image source: <a href = 'https://search.creativecommons.org/photos/2aaefd10-2fae-4df0-877d-c3adbca1f346'>Tristan Haskins</a> </center>"
+	"<center><img src ='https://img2.freepng.es/20180606/pyt/kisspng-wristband-electrodermal-activity-bracelet-sensor-w-data-transfer-cable-5b18a9cd8eacf2.3568084215283429895844.jpg' style = 'width : 25%;'><br> Image source: <a href = 'https://www.freepng.es/png-js7wxa/'>rolandosumme716</a> </center>"
 	, unsafe_allow_html=True)
 
 sliders = []
