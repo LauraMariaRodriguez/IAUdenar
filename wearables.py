@@ -117,19 +117,19 @@ if st.button('Predict'):
 			prediction = dt.predict(val)
 
 if modelo == 'Árbol de Decisión':
-	print('Árbol de Decisión')
+	st.text('Árbol de Decisión')
 	nStress = int(dt.predict(val))
 elif dia == 'Random Forest':
-	print('Random Forest')
+	st.text('Random Forest')
 	nStress = int(rf.predict(val))
 elif dia == 'Linear Regression':
-	print('Linear Regression')
+	st.text('Linear Regression')
 	nStress = int(lr.predict(val))
 elif dia == 'AdaBosst':
-	print('AdaBosst')
+	st.text('AdaBosst')
 	nStress = int(ab.predict(val))
 else:
-	print('error')			
+	st.text('error')			
 	
 			st.write('''
 			## Results 🔍 
