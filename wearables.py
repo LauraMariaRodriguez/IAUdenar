@@ -114,13 +114,13 @@ modelo = left.selectbox("Modelo de predicción",("Árbol de Decisión","Random F
 if modelo == 'Árbol de Decisión':
 	st.text('Árbol de Decisión')
 	nStress = int(dt.predict(val))
-elif dia == 'Random Forest':
+elif modelo == 'Random Forest':
 	st.text('Random Forest')
 	nStress = int(rf.predict(val))
-elif dia == 'Linear Regression':
+elif modelo == 'Linear Regression':
 	st.text('Linear Regression')
 	nStress = int(lr.predict(val))
-elif dia == 'AdaBosst':
+elif modelo == 'AdaBosst':
 	st.text('AdaBosst')
 	nStress = int(ab.predict(val))
 else:
