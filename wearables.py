@@ -21,7 +21,7 @@ val = pd.DataFrame(val)
 
 import streamlit as st 
 
-st.text(lr)
+st.text(ab)
 
 def rr_to_hb(rr):
 	rr = 1/rr
