@@ -109,7 +109,8 @@ def update():
 	val.stress = 1 if state == "Estresado" else 0
 	val.meditation = 1 if state == "Meditando" else 0
 
-
+modelo = left.selectbox("Modelo de predicción",("Árbol de Decisión","Random Forest", "Linear Regression", "AdaBosst"))
+	
 if st.button('Predict'):
 			update()
 			
