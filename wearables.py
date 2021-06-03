@@ -21,8 +21,6 @@ val = pd.DataFrame(val)
 
 import streamlit as st 
 
-st.text(ab(0))
-
 def rr_to_hb(rr):
 	rr = 1/rr
 	rr = rr*1000*60
