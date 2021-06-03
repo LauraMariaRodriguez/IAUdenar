@@ -29,6 +29,7 @@ def rr_to_hb(rr):
 st.set_page_config(layout="wide")
 st.title('IA Udenar')
 st.header("Ejercicio IA Udenar Oscar Andrés Rosero Calderón")
+st.subheader("Maestría en Electrónica")
 
 st.write("Stress Wearables")
 
