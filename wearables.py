@@ -39,7 +39,7 @@ hrv_MEAN_RR = right.slider("Latidos por minuto", math.floor(rr_to_hb(minVal.hrv_
 hrv_MEAN_RR = 1/(hrv_MEAN_RR/1000/60)
 
 right.markdown(
-	"<center><img src ='https://github.com/orosero/IAUdenar/blob/main/bracelet-sensor.png' style = 'width : 70%;'><br> Image source: <a href = 'https://www.freepng.es/png-js7wxa/'>rolandosumme716</a> </center>"
+	"<center><img src ='https://raw.githubusercontent.com/orosero/IAUdenar/main/bracelet-sensor.png' style = 'width : 70%;'><br> Image source: <a href = 'https://www.freepng.es/png-js7wxa/'>rolandosumme716</a> </center>"
 	, unsafe_allow_html=True)
 
 sliders = []
