@@ -126,7 +126,7 @@ elif modelo == 'AdaBosst':
 else:
 	st.text('error')	
 
-if st.button('Predict'):
+if st.button('Consultar Nivel'):
 			update()
 			
 			prediction = dt.predict(val)
@@ -136,8 +136,8 @@ if st.button('Predict'):
 		
 			st.text(nStress)
 			if nStress < 3:
-				st.text("Que estres ni estres, si te relajas más te quedas dormido")
+				st.text("Estres muy por debajo de lo normal")
 			elif nStress <5:
 				st.text("Nivel de estres normal")
 			else:
-				st.text("Nivel de estres alto, deberias relajarte")
+				st.text("Nivel de estres alto, Alarma")
