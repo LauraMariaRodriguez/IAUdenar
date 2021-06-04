@@ -39,7 +39,7 @@ hrv_MEAN_RR = right.slider("Latidos por minuto", math.floor(rr_to_hb(minVal.hrv_
 hrv_MEAN_RR = 1/(hrv_MEAN_RR/1000/60)
 
 right.markdown(
-	"<center><img src ='https://raw.githubusercontent.com/orosero/IAUdenar/main/bracelet-sensor.png' style = 'width : 70%;'><br> Image source: <a href = 'https://www.freepng.es/png-js7wxa/'>rolandosumme716</a> </center>"
+	"<center><img src ='https://raw.githubusercontent.com/orosero/IAUdenar/main/apple-watch.png' style = 'width : 100%;'><br> Image source: <a href = 'https://www.freepng.es/png-01knxm/'>elijahkey122</a></center>"	
 	, unsafe_allow_html=True)
 
 sliders = []
@@ -70,7 +70,7 @@ def addSli(var, text, place = None):
 
 addSli("eda_MEAN", "Actividad electrodermica media", left)
 left.markdown(
-	"<center><img src ='https://ae01.alicdn.com/kf/HTB1FAZjGHSYBuNjSspfq6AZCpXaJ/Sensor-de-corriente-de-piel-Grove-GSR-Medici-n-de-Resistencia-de-la-piel-conductividad-el.jpg_q50.jpg' style = 'width : 100%;'><br> Image source: <a href = 'https://search.creativecommons.org/photos/fc29cf47-bfc5-4ea4-832e-36d8c58b5de6'>Nikki Pugh</a></center>"
+        "<center><img src ='https://raw.githubusercontent.com/orosero/IAUdenar/main/bracelet-sensor.png' style = 'width : 70%;'><br> Image source: <a href = 'https://www.freepng.es/png-js7wxa/'>rolandosumme716</a> </center>"
 	, unsafe_allow_html=True)
 
 
